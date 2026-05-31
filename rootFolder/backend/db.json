@@ -100,7 +100,8 @@
       "image": "/images/levis-501.jpg",
       "avg_rating": 4.7,
       "view_count": 142,
-      "created_at": "2024-11-01T10:00:00.000Z"
+      "created_at": "2024-11-01T10:00:00.000Z",
+      "userId": "1"
     },
     {
       "id": "2",
@@ -116,7 +117,8 @@
       "image": "/images/nike-af1.jpg",
       "avg_rating": 4.9,
       "view_count": 287,
-      "created_at": "2024-11-03T14:30:00.000Z"
+      "created_at": "2024-11-03T14:30:00.000Z",
+      "userId": "1"
     },
     {
       "id": "3",
@@ -132,7 +134,8 @@
       "image": "/images/iphone11.jpg",
       "avg_rating": 4.5,
       "view_count": 410,
-      "created_at": "2024-11-05T09:00:00.000Z"
+      "created_at": "2024-11-05T09:00:00.000Z",
+      "userId": "1"
     },
     {
       "id": "4",
@@ -148,7 +151,8 @@
       "image": "/images/siddhartha.jpg",
       "avg_rating": 5,
       "view_count": 56,
-      "created_at": "2024-11-07T11:00:00.000Z"
+      "created_at": "2024-11-07T11:00:00.000Z",
+      "userId": "1"
     },
     {
       "id": "5",
@@ -164,7 +168,8 @@
       "image": "/images/drvena-stolica.jpg",
       "avg_rating": 4.2,
       "view_count": 89,
-      "created_at": "2024-11-08T16:00:00.000Z"
+      "created_at": "2024-11-08T16:00:00.000Z",
+      "userId": "1"
     },
     {
       "id": "6",
@@ -180,7 +185,8 @@
       "image": "/images/adidas-hoodie.jpg",
       "avg_rating": 4.8,
       "view_count": 203,
-      "created_at": "2024-11-10T08:00:00.000Z"
+      "created_at": "2024-11-10T08:00:00.000Z",
+      "userId": "1"
     },
     {
       "id": "7",
@@ -196,7 +202,8 @@
       "image": "/images/yoga-set.jpg",
       "avg_rating": 4.6,
       "view_count": 74,
-      "created_at": "2024-11-12T13:00:00.000Z"
+      "created_at": "2024-11-12T13:00:00.000Z",
+      "userId": "1"
     },
     {
       "id": "8",
@@ -212,7 +219,8 @@
       "image": "/images/canon-600d.jpg",
       "avg_rating": 4.7,
       "view_count": 198,
-      "created_at": "2024-11-14T10:30:00.000Z"
+      "created_at": "2024-11-14T10:30:00.000Z",
+      "userId": "1"
     },
     {
       "id": "9",
@@ -228,7 +236,8 @@
       "image": "/images/north-face-jakna.jpg",
       "avg_rating": 4.4,
       "view_count": 167,
-      "created_at": "2024-11-16T15:00:00.000Z"
+      "created_at": "2024-11-16T15:00:00.000Z",
+      "userId": "1"
     },
     {
       "id": "10",
@@ -244,7 +253,8 @@
       "image": "/images/lego-technic.jpg",
       "avg_rating": 5,
       "view_count": 92,
-      "created_at": "2024-11-18T09:00:00.000Z"
+      "created_at": "2024-11-18T09:00:00.000Z",
+      "userId": "1"
     },
     {
       "id": "12",
@@ -260,7 +270,8 @@
       "image": "/images/thermomix-tm5.jpg",
       "avg_rating": 4.9,
       "view_count": 301,
-      "created_at": "2024-11-22T14:00:00.000Z"
+      "created_at": "2024-11-22T14:00:00.000Z",
+      "userId": "1"
     },
     {
       "userId": "FVXcpyzLlu4",
