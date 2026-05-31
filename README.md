@@ -354,4 +354,30 @@ Ovaj odjeljak bit će dopunjen čim se završi postavljanje na Google Cloud Plat
 
 ---
 
+## Snimci Ekrana
+
+### Home Stranica
+![Home Stranica](slike/slika1.png)
+
+### Prikaz proizvoda
+![Prikaz proizvoda](slike/slika1.png)
+
+### Home Stranica
+![Home Stranica](slike/Slika2.png)
+
+### Novi oglas
+![Novi oglas](slike/Slika3.png)
+
+### Chat
+![Chat](slike/Slika4.png)
+
+### Admin Panel
+![Admin Panel](slike/AdminPanel.png)
+
+### Prijava
+![Prijava](slike/Prijava.png)
+
+### Prikaz na telefonu
+![Prikaz na telefonu](slike/TelefonPrikaz.png)
+
 *Zenica, 2026.*
