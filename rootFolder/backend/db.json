@@ -1,0 +1,585 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "Admin",
+      "lastName": "Thriftly",
+      "username": "admin",
+      "email": "admin@thriftly.ba",
+      "password": "admin123",
+      "location": "Sarajevo",
+      "bio": "Administrator platforme.",
+      "avatar_url": null,
+      "is_admin": true,
+      "is_active": true,
+      "avg_rating": 5,
+      "total_sales": 0,
+      "total_purchases": 0,
+      "created_at": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "firstName": "Amir",
+      "lastName": "Kovačević",
+      "username": "amirk",
+      "email": "amir@example.com",
+      "password": "amir1234",
+      "location": "Sarajevo",
+      "bio": "Volim vintage i thrift shopping. Sve iz doma, bez pušača.",
+      "avatar_url": null,
+      "is_admin": false,
+      "is_active": true,
+      "avg_rating": 4.9,
+      "total_sales": 12,
+      "total_purchases": 5,
+      "created_at": "2024-02-10T10:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "firstName": "Selma",
+      "lastName": "Hadžić",
+      "username": "selmah",
+      "email": "selma@example.com",
+      "password": "selma123",
+      "location": "Mostar",
+      "bio": "Thrift entuzijast iz Mostara.",
+      "avatar_url": null,
+      "is_admin": false,
+      "is_active": true,
+      "avg_rating": 4.7,
+      "total_sales": 8,
+      "total_purchases": 14,
+      "created_at": "2024-03-05T09:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "firstName": "Mirko",
+      "lastName": "Marković",
+      "username": "mirkom",
+      "email": "mirko@example.com",
+      "password": "mirko123",
+      "location": "Banja Luka",
+      "bio": "Prodajem sve što mi ne treba.",
+      "avatar_url": null,
+      "is_admin": false,
+      "is_active": true,
+      "avg_rating": 4.5,
+      "total_sales": 23,
+      "total_purchases": 3,
+      "created_at": "2024-04-12T14:00:00.000Z"
+    },
+    {
+      "firstName": "Amir",
+      "lastName": "Amar",
+      "username": "Amarkoooo",
+      "email": "Amar@gmail.com",
+      "password": "amaramaramar",
+      "location": "Tuzla",
+      "is_admin": false,
+      "is_active": true,
+      "avg_rating": 0,
+      "total_sales": 0,
+      "total_purchases": 0,
+      "created_at": "2026-05-27T18:25:15.439Z",
+      "id": "FVXcpyzLlu4",
+      "bio": "djIOAWJdjqwd"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "sellerId": "2",
+      "title": "Vintage Levi's 501 farmerke, vel. M",
+      "description": "Originalne Levi's 501 farmerke iz 90-ih. Malo nošene, bez oštećenja. Veličina M/32. Boja je klasična indigo plava, malo faded što im daje karakter.",
+      "price": 45,
+      "category": "odjeca",
+      "condition_lvl": "dobro",
+      "location": "Sarajevo",
+      "status": "active",
+      "emoji": "👖",
+      "image": "/images/levis-501.jpg",
+      "avg_rating": 4.7,
+      "view_count": 142,
+      "created_at": "2024-11-01T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "sellerId": "4",
+      "title": "Nike Air Force 1 bijele, vel. 42",
+      "description": "Nike Air Force 1 u odličnom stanju. Nošene svega 3 puta. Dolaze s originalnom kutijom i dodatnim vezicama.",
+      "price": 65,
+      "category": "obuca",
+      "condition_lvl": "kao_novo",
+      "location": "Banja Luka",
+      "status": "active",
+      "emoji": "👟",
+      "image": "/images/nike-af1.jpg",
+      "avg_rating": 4.9,
+      "view_count": 287,
+      "created_at": "2024-11-03T14:30:00.000Z"
+    },
+    {
+      "id": "3",
+      "sellerId": "3",
+      "title": "iPhone 11 64GB crni",
+      "description": "iPhone 11 u dobrom stanju. Baterija 89%. Dolazi s punjačem i silikonskom maskom. Bez ogrebotina na ekranu.",
+      "price": 290,
+      "category": "elektronika",
+      "condition_lvl": "dobro",
+      "location": "Mostar",
+      "status": "active",
+      "emoji": "📱",
+      "image": "/images/iphone11.jpg",
+      "avg_rating": 4.5,
+      "view_count": 410,
+      "created_at": "2024-11-05T09:00:00.000Z"
+    },
+    {
+      "id": "4",
+      "sellerId": "2",
+      "title": "Siddhartha — Herman Hesse",
+      "description": "Klasično filozofsko djelo. Malo označenih stranica, inače u dobrom stanju. Izdanje iz 2010.",
+      "price": 5,
+      "category": "knjige",
+      "condition_lvl": "prihvatljivo",
+      "location": "Sarajevo",
+      "status": "active",
+      "emoji": "📚",
+      "image": "/images/siddhartha.jpg",
+      "avg_rating": 5,
+      "view_count": 56,
+      "created_at": "2024-11-07T11:00:00.000Z"
+    },
+    {
+      "id": "5",
+      "sellerId": "4",
+      "title": "Drvena stolica s jastukom",
+      "description": "Solidna drvena stolica s mekim jastukom. Preuzimanje u Banja Luci. Jastuk je zamjenjiv.",
+      "price": 35,
+      "category": "namjestaj",
+      "condition_lvl": "dobro",
+      "location": "Banja Luka",
+      "status": "active",
+      "emoji": "🪑",
+      "image": "/images/drvena-stolica.jpg",
+      "avg_rating": 4.2,
+      "view_count": 89,
+      "created_at": "2024-11-08T16:00:00.000Z"
+    },
+    {
+      "id": "6",
+      "sellerId": "3",
+      "title": "Adidas Originals hoodie, vel. L",
+      "description": "Adidas hoodie bez ikakvog habanja. Nošen par puta. Tamno siva boja. Savršen za prelazno godišnje doba.",
+      "price": 38,
+      "category": "odjeca",
+      "condition_lvl": "kao_novo",
+      "location": "Mostar",
+      "status": "active",
+      "emoji": "👕",
+      "image": "/images/adidas-hoodie.jpg",
+      "avg_rating": 4.8,
+      "view_count": 203,
+      "created_at": "2024-11-10T08:00:00.000Z"
+    },
+    {
+      "id": "7",
+      "sellerId": "2",
+      "title": "Yoga prostirka + blokovi",
+      "description": "Yoga set: prostirka 6mm i dva bloka. Idealno za početnike. Korišten 5-6 puta.",
+      "price": 20,
+      "category": "sport",
+      "condition_lvl": "dobro",
+      "location": "Sarajevo",
+      "status": "active",
+      "emoji": "🧘",
+      "image": "/images/yoga-set.jpg",
+      "avg_rating": 4.6,
+      "view_count": 74,
+      "created_at": "2024-11-12T13:00:00.000Z"
+    },
+    {
+      "id": "8",
+      "sellerId": "4",
+      "title": "Canon EOS 600D + 18-55mm objektiv",
+      "description": "Odlična kamera za početnike. Shutter count ~12.000. Dolazi s torbom i memorijskom karticom 32GB.",
+      "price": 320,
+      "category": "elektronika",
+      "condition_lvl": "dobro",
+      "location": "Banja Luka",
+      "status": "active",
+      "emoji": "📷",
+      "image": "/images/canon-600d.jpg",
+      "avg_rating": 4.7,
+      "view_count": 198,
+      "created_at": "2024-11-14T10:30:00.000Z"
+    },
+    {
+      "id": "9",
+      "sellerId": "3",
+      "title": "North Face zimska jakna, vel. XL",
+      "description": "North Face zimska jakna u tamno zelenoj boji. Topla i vodootporna. Par sitnih tragova nošenja.",
+      "price": 95,
+      "category": "odjeca",
+      "condition_lvl": "dobro",
+      "location": "Mostar",
+      "status": "active",
+      "emoji": "🧥",
+      "image": "/images/north-face-jakna.jpg",
+      "avg_rating": 4.4,
+      "view_count": 167,
+      "created_at": "2024-11-16T15:00:00.000Z"
+    },
+    {
+      "id": "10",
+      "sellerId": "2",
+      "title": "LEGO Technic kamion — komplet",
+      "description": "LEGO Technic set 42078. Komplet s uputama, sve kockice prisutne. Sklopljen i fotografiran.",
+      "price": 55,
+      "category": "igracke",
+      "condition_lvl": "kao_novo",
+      "location": "Sarajevo",
+      "status": "active",
+      "emoji": "🧱",
+      "image": "/images/lego-technic.jpg",
+      "avg_rating": 5,
+      "view_count": 92,
+      "created_at": "2024-11-18T09:00:00.000Z"
+    },
+    {
+      "id": "12",
+      "sellerId": "4",
+      "title": "Thermomix TM5",
+      "description": "Thermomix TM5 u besprijekornom stanju. Kupljen 2021, malo korišten. Dolazi s knjigom recepata.",
+      "price": 480,
+      "category": "kuhinja",
+      "condition_lvl": "kao_novo",
+      "location": "Banja Luka",
+      "status": "active",
+      "emoji": "🍳",
+      "image": "/images/thermomix-tm5.jpg",
+      "avg_rating": 4.9,
+      "view_count": 301,
+      "created_at": "2024-11-22T14:00:00.000Z"
+    },
+    {
+      "userId": "FVXcpyzLlu4",
+      "sellerId": "FVXcpyzLlu4",
+      "title": "Jakna XXL",
+      "price": 40,
+      "category": "odjeca",
+      "condition_lvl": "prihvatljivo",
+      "location": "Sarajevo",
+      "status": "active",
+      "emoji": "📦",
+      "image": null,
+      "description": "onako je",
+      "view_count": 0,
+      "avg_rating": 0,
+      "created_at": "2026-05-28T13:06:49.623Z",
+      "id": "FDZVnRfIBg0"
+    }
+  ],
+  "favorites": [],
+  "cart_items": [],
+  "orders": [
+    {
+      "userId": "FVXcpyzLlu4",
+      "customerName": "Amir Amar",
+      "deliveryAddress": "djqwopdjwq ",
+      "deliveryCity": "Tuzla",
+      "phone": "111 111 111",
+      "paymentMethod": "pouzecem",
+      "items": [
+        {
+          "cartItemId": "FPO5NwEcKkA",
+          "productId": "12",
+          "title": "Thermomix TM5",
+          "price": 480,
+          "emoji": "🍳"
+        }
+      ],
+      "totalPrice": 480,
+      "status": "na_cekanju",
+      "created_at": "2026-05-27T18:27:21.334Z",
+      "id": "eS8FFjqbw5c"
+    },
+    {
+      "userId": "1",
+      "customerName": "Admin Thriftly",
+      "deliveryAddress": "dwqdqw",
+      "deliveryCity": "Zenica",
+      "phone": "061 867 231",
+      "paymentMethod": "pouzecem",
+      "items": [
+        {
+          "cartItemId": "Ny_f2C-Q_6c",
+          "productId": "12",
+          "title": "Thermomix TM5",
+          "price": 480,
+          "emoji": "🍳"
+        }
+      ],
+      "totalPrice": 480,
+      "status": "na_cekanju",
+      "created_at": "2026-05-28T11:11:36.779Z",
+      "id": "P3X1LjlWpic"
+    }
+  ],
+  "conversations": [
+    {
+      "participant_one": null,
+      "participant_two": null,
+      "productId": "12",
+      "last_message_at": "2026-05-27T18:26:15.737Z",
+      "created_at": "2026-05-27T18:26:15.737Z",
+      "id": "ujOmquUzH9Y"
+    },
+    {
+      "participant_one": null,
+      "participant_two": null,
+      "productId": "12",
+      "last_message_at": "2026-05-27T18:26:28.096Z",
+      "created_at": "2026-05-27T18:26:28.096Z",
+      "id": "duNh-inS64A"
+    },
+    {
+      "participant_one": null,
+      "participant_two": null,
+      "productId": "12",
+      "last_message_at": "2026-05-28T11:11:05.559Z",
+      "created_at": "2026-05-28T11:11:05.559Z",
+      "id": "PfQrwGKMbSA"
+    },
+    {
+      "participant_one": null,
+      "participant_two": null,
+      "productId": "12",
+      "last_message_at": "2026-05-28T11:24:01.587Z",
+      "created_at": "2026-05-28T11:24:01.587Z",
+      "id": "ztQwbcAPUVw"
+    },
+    {
+      "participant_one": null,
+      "participant_two": null,
+      "productId": "12",
+      "last_message_at": "2026-05-28T11:37:12.809Z",
+      "created_at": "2026-05-28T11:37:12.809Z",
+      "id": "E-rlzM7DnnU"
+    },
+    {
+      "participant_one": null,
+      "participant_two": null,
+      "productId": "10",
+      "last_message_at": "2026-05-28T11:37:18.634Z",
+      "created_at": "2026-05-28T11:37:18.634Z",
+      "id": "90VN8AZkp1Y"
+    },
+    {
+      "participant_one": null,
+      "participant_two": null,
+      "productId": "12",
+      "last_message_at": "2026-05-28T12:21:54.114Z",
+      "created_at": "2026-05-28T12:21:54.114Z",
+      "id": "ra0YjLIk4F0"
+    },
+    {
+      "participant_one": null,
+      "participant_two": null,
+      "productId": "12",
+      "last_message_at": "2026-05-28T12:24:32.828Z",
+      "created_at": "2026-05-28T12:24:32.828Z",
+      "id": "6nM2XYRPXmY"
+    },
+    {
+      "participant_one": null,
+      "participant_two": null,
+      "productId": "12",
+      "last_message_at": "2026-05-28T12:24:56.716Z",
+      "created_at": "2026-05-28T12:24:56.716Z",
+      "id": "mr5sE6lB0-g"
+    },
+    {
+      "participant_one": null,
+      "participant_two": null,
+      "productId": "9",
+      "last_message_at": "2026-05-28T12:29:17.316Z",
+      "created_at": "2026-05-28T12:29:17.316Z",
+      "id": "8NYMopNkYyM"
+    },
+    {
+      "participant_one": null,
+      "participant_two": null,
+      "productId": "9",
+      "last_message_at": "2026-05-28T12:29:50.377Z",
+      "created_at": "2026-05-28T12:29:50.377Z",
+      "id": "5w3ONc18iSM"
+    },
+    {
+      "participant_one": null,
+      "participant_two": null,
+      "productId": "12",
+      "last_message_at": "2026-05-28T12:36:43.699Z",
+      "created_at": "2026-05-28T12:36:43.699Z",
+      "id": "aPGgR9MAS0s"
+    },
+    {
+      "participant_one": null,
+      "participant_two": null,
+      "productId": "8",
+      "last_message_at": "2026-05-28T12:37:57.553Z",
+      "created_at": "2026-05-28T12:37:57.553Z",
+      "id": "2vChxyrGQwo"
+    },
+    {
+      "productId": "10",
+      "buyerId": "FVXcpyzLlu4",
+      "sellerId": 2,
+      "created_at": "2026-05-28T12:42:16.406Z",
+      "last_message_at": "2026-05-28T12:45:10.380Z",
+      "id": "Bvq_4yET750"
+    },
+    {
+      "productId": "9",
+      "buyerId": "FVXcpyzLlu4",
+      "sellerId": 3,
+      "created_at": "2026-05-28T12:45:17.455Z",
+      "last_message_at": "2026-05-28T12:45:24.499Z",
+      "id": "nHtlbJYURs4"
+    },
+    {
+      "productId": "8",
+      "buyerId": "FVXcpyzLlu4",
+      "sellerId": 4,
+      "created_at": "2026-05-28T12:47:37.442Z",
+      "last_message_at": "2026-05-28T12:47:37.442Z",
+      "id": "QRCnw8VwhNo"
+    }
+  ],
+  "messages": [
+    {
+      "conversationId": "Bvq_4yET750",
+      "senderId": "FVXcpyzLlu4",
+      "body": "zdravo",
+      "is_read": false,
+      "created_at": "2026-05-28T12:42:20.548Z",
+      "id": "V20w54_vO3U"
+    },
+    {
+      "conversationId": "Bvq_4yET750",
+      "senderId": "FVXcpyzLlu4",
+      "body": "hejjj",
+      "is_read": false,
+      "created_at": "2026-05-28T12:42:25.487Z",
+      "id": "k2wCy3-rYKQ"
+    },
+    {
+      "conversationId": "Bvq_4yET750",
+      "senderId": "FVXcpyzLlu4",
+      "body": "kako ste",
+      "is_read": false,
+      "created_at": "2026-05-28T12:45:10.352Z",
+      "id": "XAiXbuaOc0I"
+    },
+    {
+      "conversationId": "nHtlbJYURs4",
+      "senderId": "FVXcpyzLlu4",
+      "body": "hiii",
+      "is_read": false,
+      "created_at": "2026-05-28T12:45:24.465Z",
+      "id": "b8lw_4XjeSQ"
+    }
+  ],
+  "product_reviews": [
+    {
+      "id": "1",
+      "productId": 2,
+      "reviewerId": 2,
+      "orderId": null,
+      "rating": 5,
+      "comment": "Fantastičan prodavač, patike tačno kao opisano!",
+      "created_at": "2024-11-10T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "productId": 3,
+      "reviewerId": 4,
+      "orderId": null,
+      "rating": 4,
+      "comment": "iPhone u redu, baterija malo slabija nego opisano ali ok za cijenu.",
+      "created_at": "2024-11-15T12:00:00.000Z"
+    },
+    {
+      "productId": 12,
+      "reviewerId": "FVXcpyzLlu4",
+      "reviewerName": "Amir Amar",
+      "rating": 3,
+      "comment": "ne valja",
+      "created_at": "2026-05-27T18:26:41.151Z",
+      "id": "OHo45OQnyF0"
+    },
+    {
+      "productId": 12,
+      "reviewerId": "FVXcpyzLlu4",
+      "reviewerName": "Amir Amar",
+      "rating": 5,
+      "comment": "fuj",
+      "created_at": "2026-05-27T18:26:51.399Z",
+      "id": "AbG61wJJrCI"
+    },
+    {
+      "productId": 10,
+      "reviewerId": "FVXcpyzLlu4",
+      "reviewerName": "Amir Amar",
+      "rating": 5,
+      "comment": "osoba me prevarila nikad nije stiglo",
+      "created_at": "2026-05-28T12:12:55.552Z",
+      "id": "jSboqAEhAhE"
+    },
+    {
+      "productId": 10,
+      "reviewerId": "FVXcpyzLlu4",
+      "reviewerName": "Amir Amar",
+      "rating": 1,
+      "comment": "htio sam one star stavit",
+      "created_at": "2026-05-28T12:13:03.212Z",
+      "id": "-hcthigsQN4"
+    }
+  ],
+  "user_reviews": [
+    {
+      "id": "1",
+      "sellerId": 4,
+      "reviewerId": 2,
+      "orderId": null,
+      "rating": 5,
+      "comment": "Odličan prodavač, brza komunikacija i tačan opis!",
+      "created_at": "2024-11-11T09:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "sellerId": 3,
+      "reviewerId": 4,
+      "orderId": null,
+      "rating": 4,
+      "comment": "Generalno zadovoljan kupovinom.",
+      "created_at": "2024-11-16T14:00:00.000Z"
+    }
+  ],
+  "reports": [
+    {
+      "id": "1",
+      "reporterId": 2,
+      "reported_user_id": null,
+      "reported_product_id": 3,
+      "reason": "lazan_oglas",
+      "description": "Cijena nije odgovarala stanju.",
+      "status": "open",
+      "resolved_by": null,
+      "resolved_at": null,
+      "admin_note": null,
+      "created_at": "2024-11-20T10:00:00.000Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
