@@ -360,10 +360,7 @@ Ovaj odjeljak bit će dopunjen čim se završi postavljanje na Google Cloud Plat
 ![Home Stranica](slike/slika1.png)
 
 ### Prikaz proizvoda
-![Prikaz proizvoda](slike/slika1.png)
-
-### Home Stranica
-![Home Stranica](slike/Slika2.png)
+![Prikaz proizvoda](slike/Slika2.png)
 
 ### Novi oglas
 ![Novi oglas](slike/Slika3.png)
