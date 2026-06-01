@@ -953,9 +953,10 @@ tr:hover td { background: var(--bg-subtle); }
 }
 
 @media (max-width: 768px) {
-  .topbar-inner { gap: 12px; padding: 0 16px; }
+  .topbar { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .topbar-inner { gap: 12px; padding: 0 16px; min-width: max-content; }
   .search-bar { max-width: none; }
-  .nav-actions .btn { display: none; }
+  .nav-actions .btn { display: inline-flex; }
   .main-layout { padding: 16px; }
   .profile-header-card { flex-direction: column; align-items: center; text-align: center; }
   .chat-layout { grid-template-columns: 1fr; }
@@ -970,7 +971,7 @@ tr:hover td { background: var(--bg-subtle); }
 
 @media (max-width: 480px) {
   :root { --nav-h: 56px; }
-  .topbar-inner { padding: 0 12px; gap: 8px; }
+  .topbar-inner { padding: 0 12px; gap: 8px; min-width: max-content; }
   .logo { font-size: 18px; }
   .search-bar input { font-size: 13px; }
   .product-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
