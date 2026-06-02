@@ -28,23 +28,31 @@ export function CartProvider({ children }) {
     const newItem = {
       userId: user.id,
       productId: product.id,
-      product, // denormalizirano za brzi prikaz
       added_at: new Date().toISOString(),
     }
     const created = await api.post('/cart_items', newItem)
-    setItems(prev => [...prev, created])
+    // Dodaj product lokalno za prikaz, ne šalji na server
+    setItems(prev => [...prev, { ...created, product }])
     return true
   }, [user?.id, items])
 
   const removeItem = useCallback(async (cartItemId) => {
-    await api.delete(`/cart_items/${cartItemId}`)
+    // Ukloni iz lokalnog statea odmah, bez obzira na server odgovor
     setItems(prev => prev.filter(i => i.id !== cartItemId))
+    try {
+      await api.delete(`/cart_items/${cartItemId}`)
+    } catch (err) {
+      // Item možda više ne postoji u bazi (npr. baza resetovana) — ignorišemo grešku
+      console.warn(`Cart item ${cartItemId} nije pronađen na serveru, uklonjen lokalno.`)
+    }
   }, [])
 
   const clearCart = useCallback(async () => {
-    // Obriši sve stavke korisnika
-    await Promise.all(items.map(i => api.delete(`/cart_items/${i.id}`)))
+    const currentItems = [...items]
+    // Očisti lokalni state odmah
     setItems([])
+    // Pokušaj obrisati sa servera, ignoriši greške za stavke koje ne postoje
+    await Promise.allSettled(currentItems.map(i => api.delete(`/cart_items/${i.id}`)))
   }, [items])
 
   const total = items.reduce((sum, i) => sum + (i.product?.price || 0), 0)
