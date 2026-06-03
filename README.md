@@ -336,45 +336,48 @@ Za admin pristup, pronađi korisnika s poljem `is_admin: true` u `backend/db.jso
 
 ---
 
-## Produkcijski URL i deployment
+## 🚀 Produkcijski URL i deployment
 
-🧩 Arhitektura sustava
+## 🧩 Arhitektura sustava
 
 Aplikacija je podijeljena na dva dijela:
 
-Frontend (React + Vite) – hostan na Vercel platformi
-Backend (JSON Server + Docker) – hostan na Railway platformi
+- **Frontend (React + Vite)** – hostan na Vercel platformi  
+- **Backend (JSON Server + Docker)** – hostan na Railway platformi  
 
 Frontend i backend komuniciraju putem REST API poziva.
 
-⚙️ Backend (Railway + Docker)
+---
 
-Backend je implementiran pomoću json-servera, koji koristi lokalni db.json kao bazu podataka.
+## ⚙️ Backend (Railway + Docker)
+
+Backend je implementiran pomoću **json-servera**, koji koristi lokalni `db.json` kao bazu podataka.
 
 Docker konfiguracija:
 
-Node.js 18 Alpine image
-globalna instalacija json-server
-pokretanje servera na portu 5000
-izložen host 0.0.0.0 za produkcijsko okruženje
+- Node.js 18 Alpine image  
+- globalna instalacija `json-server`  
+- pokretanje servera na portu 5000  
+- izložen host `0.0.0.0` za produkcijsko okruženje  
 
 Backend izlaže REST API endpointove poput:
 
-/products
-/users
+- `/products`  
+- `/users`   
 
-🎨 Frontend (Vercel)
+---
+
+## 🎨 Frontend (Vercel)
 
 Frontend je razvijen u:
 
-React 18
-Vite
-React Router
+- React 18  
+- Vite  
+- React Router  
 
 Aplikacija je dostupna na sljedećem URL-u:
-Frontend link: https://deployanjefrontenda.vercel.app/
 
----
+**Frontend link:** https://deployanjefrontenda.vercel.app/
 
 ## Članovi tima i doprinos
 
