@@ -90,7 +90,7 @@ docker compose up --build
 Struktura projekta:
 
 ```
-FinalniProjekt/
+rootFolder/
 ├── frontend/
 │   ├── Dockerfile
 │   ├── nginx.conf
@@ -228,7 +228,7 @@ volumes:
 
 #### Healthcheck detalji
 
-Healthcheck šalje HTTP zahtjev na `/users` endpoint svakih **5 sekundi**. Kontejner dobiva **10 sekundi** start perioda prije nego što neuspjeli checkovi počnu biti relevantni. Nakon **10 neuspjelih** pokušaja, kontejner se označava kao `unhealthy`.
+Healthcheck skripta (scripts/health-check.sh) šalje HTTP zahtjev na deployani URL aplikacije i provjerava HTTP status kod. Rezultat provjere se zapisuje u health.log fajl zajedno sa timestampom. Ako je status kod 200, skripta vraća exit kod 0 (uspjeh), a ako nije, vraća exit kod 1 (greška).
 
 #### Named Volume i persistencija
 
@@ -336,11 +336,43 @@ Za admin pristup, pronađi korisnika s poljem `is_admin: true` u `backend/db.jso
 
 ---
 
-## Produkcijski URL (GCP)
+## Produkcijski URL i deployment
 
-> ⚠️ **GCP deployment je u toku.** Aplikacija još nije javno dostupna na produkcijskom URL-u.
+🧩 Arhitektura sustava
 
-Ovaj odjeljak bit će dopunjen čim se završi postavljanje na Google Cloud Platform (Compute Engine VM s Docker + systemd autostart i HTTPS konfiguracijom).
+Aplikacija je podijeljena na dva dijela:
+
+Frontend (React + Vite) – hostan na Vercel platformi
+Backend (JSON Server + Docker) – hostan na Railway platformi
+
+Frontend i backend komuniciraju putem REST API poziva.
+
+⚙️ Backend (Railway + Docker)
+
+Backend je implementiran pomoću json-servera, koji koristi lokalni db.json kao bazu podataka.
+
+Docker konfiguracija:
+
+Node.js 18 Alpine image
+globalna instalacija json-server
+pokretanje servera na portu 5000
+izložen host 0.0.0.0 za produkcijsko okruženje
+
+Backend izlaže REST API endpointove poput:
+
+/products
+/users
+
+🎨 Frontend (Vercel)
+
+Frontend je razvijen u:
+
+React 18
+Vite
+React Router
+
+Aplikacija je dostupna na sljedećem URL-u:
+Frontend link: https://deployanjefrontenda.vercel.app/
 
 ---
 
