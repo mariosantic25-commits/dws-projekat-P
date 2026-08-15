@@ -1,4 +1,4 @@
-const BASE = 'https://dws-projekat-p-production.up.railway.app'
+const BASE = 'https://backend-deployment-dyre.onrender.com'
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE}${path}`, {
